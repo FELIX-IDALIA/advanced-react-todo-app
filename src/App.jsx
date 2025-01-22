@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
-import ProtectedRoute from './components/auth/ProtectedRoute';
+import Protected from './components/auth/Protected';
 import TodoAppPage from './components/pages/TodoAppPage';
 import LoginPage from './components/pages/LoginPage';
 
@@ -17,9 +17,9 @@ const App = () => {
             <Route
               path="/todos"
               element={
-                <ProtectedRoute>
+                <Protected>
                   <TodoAppPage />
-                </ProtectedRoute>
+                </Protected>
               }
             />
             <Route path="/" element={<Navigate to="/login" replace/>}/> 
