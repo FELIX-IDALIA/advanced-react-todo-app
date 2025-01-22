@@ -1,8 +1,71 @@
-# React + Vite
+# Advanced React Todo Application
+A feature-rich todo application built with React, Redux, and Weather API integration. This application allows users to manage tasks with priorities while providing real-time weather updates.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
+1. #### User Authentication
+- Secure login/logout functionality
+- Protected routes using React Router
+- Persistent authentication using localStorage
 
-Currently, two official plugins are available:
+2. #### Task Management
+- Create new tasks with priority levels (High, Medium, Low)
+- Delete tasks with single click
+- Visual priority indicators
+- Persistent storage of tasks using localStorage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 3. #### Weather Integration
+- Real-time weather updates using WeatherAPI
+- Automatic refresh every 30 minutes
+- Error handling and loading states
+- Visual weather indicators
+
+4. #### Responsive Design
+- Mobile-first approach
+- Clean and modern UI
+- Tailwind CSS for styling
+- Responsive across all device sizes
+
+### Technologies Used
+- React 18
+- Redux Toolkit for state management
+- React Router v6 for routing
+- Tailwind CSS for styling
+- WeatherAPI for weather data
+- Lucide React for icons
+
+### Setup Instructions
+1. #### Clone the Repository
+git@github.com:FELIX-IDALIA/advanced-react-todo-app.git
+cd react-todo-app
+
+2. #### Install Dependencies
+npm install
+
+3. #### Environment Setup
+- Create a .env file in the root directory
+- Add your WeatherAPI key:
+REACT_APP_WEATHER_API_KEY=your_api_key_here
+
+4. #### Start the Development Server
+npm start
+
+5. #### Build for Production
+npm run build
+
+### Screenshots
+#### Login Page
+- Login Page Image will be shown here
+
+#### Todo Dashboard
+- Todo Dashboard Image will be shown here
+
+#### Mobile View
+- Mobile View Image will be shown here
+
+
+
+
+
+
+
+
