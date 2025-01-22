@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 //import Login from './components/Auth/Login';
 //import TodoApp from './components/Todo/TodoApp';
-import ProtectedRoute from './components/Auth/ProtectedRoute';
+import ProtectedRoute from './components/auth/ProtectedRoute';
 import TodoAppPage from './components/pages/TodoAppPage';
 import LoginPage from './components/pages/LoginPage';
 
