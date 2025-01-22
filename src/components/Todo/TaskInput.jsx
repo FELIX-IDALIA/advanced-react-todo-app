@@ -1,7 +1,7 @@
 const TaskInput = ({ setTask, handleAddTask, task }) => {
   return (
       <form onSubmit={handleAddTask} className="space-y-4">
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <input
               type="text"
               value={task.title}

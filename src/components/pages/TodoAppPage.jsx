@@ -58,9 +58,9 @@ const TodoAppPage = () => {
 
     return (
         
-            <div className="min-h-[500px] bg-gray-50 p-4">
-                <div className="max-w-4xl mx-auto">
-                    <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="min-h-screen bg-gray-50 p-4 sm:p-6">
+                <div className="max-w-full sm:max-w-2xl lg:max-w-4xl mx-auto">
+                    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
                         <SignOut handleLogOut={handleLogOut}/>
                         {/*<WeatherApi />*/}
                         <WeatherWidget />
