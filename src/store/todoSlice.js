@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
 // Create async thunk for weather API
 export const fetchWeather = createAsyncThunk(
@@ -6,7 +7,7 @@ export const fetchWeather = createAsyncThunk(
     async (_, { rejectWithValue }) => {
       try {
         const response = await fetch(
-          `https://api.weatherapi.com/v1/current.json?key=be9f42f962036b274ec44124fd1d60ca&q=London`
+          `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=London`
         );
         
         if (!response.ok) {
